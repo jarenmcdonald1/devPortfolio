@@ -7,7 +7,9 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
+import { Row, Col } from 'react-bootstrap'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -19,8 +21,17 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            github
           }
+        }
+      }
+      profileImg: file(relativePath: { eq: "jaren-profile.jpg"}) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 125
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+          )
         }
       }
     }
@@ -29,29 +40,20 @@ const Bio = () => {
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+  const image = getImage(data.profileImg.childImageSharp)
 
   return (
-    <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
+    <Row className="bio justify-content-center">
+    <Col xs={12} className="bio-col d-flex align-items-center justify-content-center">
+      <GatsbyImage className="rounded-circle bio-img mr-2" image={image} alt={'me and my car'} />
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+        <p className="mb-0">
+          Written by <strong>{author.name}</strong> {author?.summary || null} <a href={`https://github.com/${social?.github || ``}`}> You should follow me on Github!
           </a>
         </p>
       )}
-    </div>
+      </Col>
+    </Row>
   )
 }
 

@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import {Col} from 'react-bootstrap'
+
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -17,20 +19,31 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article
-        className="blog-post"
+        className="project-post container"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        <header className="">
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
         </header>
+
+        <section className="row project-details">
+        <Col xs={12} sm={6}>
+            <p>Client: {post.frontmatter.client}</p>
+          </Col>
+          <Col xs={12} sm={6} className="text-right">
+            {post.frontmatter.date}
+          </Col>
+        </section>
+
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+
         <hr />
-        <footer>
+
+        <footer className="">
           <Bio />
         </footer>
       </article>
@@ -83,8 +96,20 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM, YYYY")
         description
+        subtitle
+        client
+        tags
+        thumbimg {
+          childImageSharp {
+            gatsbyImageData (                
+              width: 650
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
+              )
+            }
+          }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

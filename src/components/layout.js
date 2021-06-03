@@ -1,6 +1,9 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+import { Navbar, Nav, Container } from 'react-bootstrap'
+import Footer from './footer'
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
@@ -8,15 +11,39 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <header class="">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+            <Link className="navbar-brand">JM</Link>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="ml-lg-auto">
+                <Nav.Link href="#about">About me</Nav.Link>
+                <Nav.Link href="#work">Work</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </header>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <header class="">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+          <Container>
+            <Link className="navbar-brand" to="/">JM</Link>
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="ml-lg-auto">
+                <Nav.Link href="#about">About me</Nav.Link>
+                <Nav.Link href="#work">Work</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </header>
     )
   }
 
@@ -24,11 +51,7 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   )
 }
