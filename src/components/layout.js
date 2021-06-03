@@ -11,10 +11,10 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <header class="">
+      <header className="">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Link className="navbar-brand">JM</Link>
+            <Navbar.Brand>JM</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-lg-auto">
@@ -29,7 +29,7 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <header class="">
+      <header className="">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <Link className="navbar-brand" to="/">JM</Link>
