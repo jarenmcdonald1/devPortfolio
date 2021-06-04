@@ -90,7 +90,7 @@ const Index = ({ data, location }) => {
           </Col>
           <Col>
             <h4 className="display-4">Hello, I'm Jaren</h4>
-            <h6>I'm a multi-talented front-end web developer that loves what I do!</h6>
+            <h5>I'm a multi-talented front-end web developer that loves what I do!</h5>
             <p>Since beginning my journey nearly {careerduration} years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
             <Link to="#contact" alt="send me an email" className="btn btn-primary btn-lg">Let's talk! <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></Link>
           </Col>
