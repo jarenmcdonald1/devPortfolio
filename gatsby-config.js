@@ -10,6 +10,7 @@ module.exports = {
     social: {
       twitter: `kylemathews`,
       github: `jarenmcdonald1`,
+      linkedin: `jaren-mcdonald`,
     },
   },
   plugins: [
@@ -148,4 +149,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  flags: {
+    DEV_SSR: false
+  },
 }

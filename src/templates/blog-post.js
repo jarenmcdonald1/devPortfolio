@@ -1,15 +1,18 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-import {Col} from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const bannerimage = getImage(post.frontmatter.thumbimg)
   const { previous, next } = data
 
   return (
@@ -18,13 +21,23 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+
+      <section className="post-banner-con">
+        <div className="post-banner-text-con px-2 py-2 d-flex align-items-center justify-content-center">
+          <h1 className="banner-title text-center text-white font-weight-bold">{post.frontmatter.title}</h1>
+        </div>
+        <div className="post-banner-img-con">
+          <GatsbyImage className="post-banner-img" image={bannerimage} alt={post.frontmatter.title} />
+        </div>
+      </section>
+
       <article
         className="project-post container"
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header className="">
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
+        <header className="d-none">
+          <h2 itemProp="headline">{post.frontmatter.title}</h2>
         </header>
 
         <section className="row project-details">
@@ -47,8 +60,9 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio />
         </footer>
       </article>
-      <nav className="blog-post-nav">
+      <nav className="blog-post-nav py-3">
         <ul
+          className="d-flex flex-wrap justify-content-between align-items-center py-2 px-2 py-md-4"
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -59,15 +73,15 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields.slug} rel="prev" className="btn btn-outline-dark rounded-pill">
+              <FaAngleLeft className="mb-1 mr-1" title="arrow left icon" /> {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="text-right">
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+              <Link to={next.fields.slug} rel="next" className="text-right btn btn-outline-dark rounded-pill">
+                {next.frontmatter.title} <FaAngleRight className="mb-1 ml-1" title="arrow right icon" />
               </Link>
             )}
           </li>

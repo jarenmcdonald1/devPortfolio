@@ -14,7 +14,7 @@ const Layout = ({ location, title, children }) => {
       <header className="">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand>JM</Navbar.Brand>
+            <Navbar.Brand className="logo-text">JM</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-lg-auto">
@@ -32,7 +32,7 @@ const Layout = ({ location, title, children }) => {
       <header className="">
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Link className="navbar-brand" to="/">JM</Link>
+            <Link className="navbar-brand logo-text" to="/">JM</Link>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-lg-auto">

@@ -11,9 +11,28 @@
     max-width: 650px;
 }
 
+.logo-text {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
 .transition {
     transition: all 0.14s ease-in-out;
 }
+
+
+.footer-main {
+    background-color: #222222;
+}
+
+.footer-nav-con .nav-link {
+    color: lightgray;
+    font-size: 1.125em;
+}
+.footer-nav-con .nav-link:hover {
+    color: white;
+}
+
 
 .index-work-con {
     display: grid;
@@ -23,6 +42,12 @@
     display: grid;
     justify-content: center;
     align-items: center;
+}
+.work-project-main:hover {
+    text-decoration: none;
+}
+.work-project-main:hover .work-project-con {
+    background-color: hsla(211, 100%, 50%, 0.5);
 }
 
 .work-project-con, .work-img {
@@ -40,8 +65,9 @@
 .work-project-con {
     z-index: 51;
 
-    background-color: hsla(211, 100%, 50%, 0.35);
+    background-color: hsla(211, 100%, 50%, 0.3);
     height: 100%;
+    transition: all 0.14s ease-in-out;
 }
 
 .work-body {
@@ -52,15 +78,36 @@
     text-decoration: none;
 }
 
+.project-sample .sample-title {
+    font-size: 2em;
+}
+.project-sample h3,
+.project-sample h4,
+.project-sample h5,
+.project-sample h6,
+.project-sample p {
+    text-shadow: #222 1px 1px 5px;
+}
+
+
+.contact-icon {
+    height: 40px;
+    width: auto;
+    color: inherit;
+}
+.contact-icon-link {
+    color: #222222;
+    transition: all 0.14s ease-in-out;
+}
+
 @media only screen and (min-width: 576px) {
 
     .work-project-con {
-        background-color: hsla(211, 100%, 50%, 0.15);
-        transition: all 0.14s ease-in-out;
+        background-color: hsla(211, 100%, 50%, 0.1);
     }
 
     .work-project-main:hover .work-project-con {
-        background-color: hsla(211, 100%, 50%, 0.45);
+        background-color: hsla(211, 100%, 50%, 0.5);
     }
 
     .index-work-con {
@@ -79,10 +126,18 @@
         grid-row-end: span 1;
     }
 
+    .project-sample .sample-title {
+        font-size: 2.65em;
+    }
+
 }
 
 
 @media only screen and (min-width: 765px) {
+
+    .logo-text {
+        font-size: 2em;
+    }
 
     .index-work-con {
         grid-template-columns: repeat(4, 1fr);
@@ -106,6 +161,18 @@
     }
     .work-project-main:nth-child(8n+6) {
         grid-row-end: span 2;
+    }
+
+    .project-sample .sample-title {
+        font-size: 3.125em;
+        line-height: 1;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .project-sample .sample-title {
+        font-size: 4.25em;
     }
 }
 
@@ -152,4 +219,64 @@
         grid-column-end: span 3;
         grid-row-end: span 1;
     }
+
+    .project-sample .sample-title {
+        font-size: 4em;
+    }
+}
+
+
+.post-banner-con {
+    width: 100%;
+    height: 70vh;
+
+    display: grid;
+}
+
+.banner-title {
+    font-size: 3.5em;
+    text-shadow: #222 1px 1px 6px;
+    line-height: 1;
+}
+
+.post-banner-text-con, .post-banner-img-con {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.post-banner-img-con {
+    width: 100%;
+    z-index: 50;
+}
+.post-banner-img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.post-banner-text-con {
+    z-index: 51;
+}
+
+
+@media only screen and (min-width: 576px) {
+
+    .post-banner-con {
+        height: 45vh;
+    }
+
+    .banner-title {
+        font-size: 4em;
+    }
+
+}
+
+@media only screen and (min-width: 765px) {
+
+    .post-banner-con {
+        height: 40vh;
+    }
+
+    .banner-title {
+        font-size: 5em;
+    }
+
 }
