@@ -3,9 +3,10 @@
 
 .bio-img {
     min-width: 100px !important;
+    min-height: 100px;
 }
 .bio-col {
-    max-width: 650px;
+    max-width: 750px;
 }
 
 .logo-text {
@@ -104,7 +105,7 @@
     }
 
     .work-project-main:hover .work-project-con {
-        background-color: hsla(211, 100%, 50%, 0.5);
+        background-color: hsla(211, 100%, 50%, 0.6);
     }
 
     .index-work-con {
@@ -182,7 +183,7 @@
 
     .work-project-main {
         grid-column-end: span 2;
-        grid-row-end: span 1;
+        grid-row-end: span 2;
     }
 
     .work-project-main:nth-child(8n+1) {
@@ -190,31 +191,32 @@
         grid-column-end: span 4;
     }
     .work-project-main:nth-child(8n+2) {
-        grid-row-end: span 2;
+        grid-row-end: span 3;
         grid-column-end: span 2;
     }
     .work-project-main:nth-child(8n+3) {
         grid-column-end: span 2;
+        grid-row-end: span 2;
     }
     .work-project-main:nth-child(8n+4) {
         grid-column-end: span 2;
         grid-row-end: span 2;
     }
     .work-project-main:nth-child(8n+5) {
+        grid-row-end: span 3;
         grid-column-end: span 2;
-        grid-row-end: span 1;
     }
     .work-project-main:nth-child(8n+6) {
+        grid-row-end: span 2;
         grid-column-end: span 2;
-        grid-row-end: span 1;
     }
     .work-project-main:nth-child(8n+7) {
-        grid-column-end: span 3;
-        grid-row-end: span 1;
+        grid-row-end: span 2;
+        grid-column-end: span 2;
     }
     .work-project-main:nth-child(8n+8) {
-        grid-column-end: span 3;
         grid-row-end: span 1;
+        grid-column-end: span 4;
     }
 
     .project-sample .sample-title {
@@ -249,8 +251,14 @@
     min-height: 100%;
     object-fit: cover;
 }
+
 .post-banner-text-con {
     z-index: 51;
+}
+
+.project-post-btn {
+    font-size: 1.125em;
+    font-weight: bold;
 }
 
 

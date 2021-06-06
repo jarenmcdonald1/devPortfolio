@@ -36,9 +36,9 @@ const Layout = ({ location, title, children }) => {
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="ml-lg-auto">
-                <Nav.Link href="#about">About me</Nav.Link>
-                <Nav.Link href="#work">Work</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link href="/#about">About me</Nav.Link>
+                <Nav.Link href="/#work">Work</Nav.Link>
+                <Nav.Link href="/#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

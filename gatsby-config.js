@@ -3,7 +3,7 @@ module.exports = {
     title: `Jaren McDonald`,
     author: {
       name: `Jaren McDonald`,
-      summary: `who lives and works in London, Ontario. I design and develop digital solutions!`,
+      summary: `who lives and works in Toronto, Ontario. I design and develop digital solutions!`,
     },
     description: `My portfolio site showcasing what I've accomplished.`,
     siteUrl: `https://jaren.ca/`,
@@ -11,6 +11,7 @@ module.exports = {
       twitter: `kylemathews`,
       github: `jarenmcdonald1`,
       linkedin: `jaren-mcdonald`,
+      email: `jaren.mcd@gmail.com`,
     },
   },
   plugins: [

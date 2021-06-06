@@ -14,13 +14,13 @@ const Footer = () => {
               <Nav.Link href="/">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="nav-link" href="#about" eventKey="link-1">About me</Nav.Link>
+              <Nav.Link className="nav-link" href="/#about" eventKey="link-1">About me</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="nav-link" href="#work" eventKey="link-2">Work</Nav.Link>
+              <Nav.Link className="nav-link" href="/#work" eventKey="link-2">Work</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className="nav-link" href="#contact" eventKey="link-3">Contact</Nav.Link>
+              <Nav.Link className="nav-link" href="/#contact" eventKey="link-3">Contact</Nav.Link>
             </Nav.Item>
           </Nav>
         </Col>

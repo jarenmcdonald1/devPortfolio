@@ -24,7 +24,7 @@ const Index = ({ data, location }) => {
         
         </section>
 
-        <Container className="mb-4 mb-sm-5" id="about">
+        <Container className="mb-4 mb-sm-5 pt-2 pt-md-4" id="about">
           <Row className="align-items-center">
             <Col xs={12} md={6}>
               <GatsbyImage className="about-img" image={profileimage} alt="me and my car" />
@@ -38,7 +38,7 @@ const Index = ({ data, location }) => {
           </Row>
         </Container>
 
-        <p>
+        <p className="mb-4 mb-md-5 py-md-4">
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js).
@@ -54,17 +54,21 @@ const Index = ({ data, location }) => {
                     Have a new project in mind? Need help with an existing project? Looking for an experienced freelance web developer? No matter what point you are with your project, I'll be happy to help!
                   </Card.Text>
                   <div className="mb-3">
-                    <a className="btn btn-primary" href="mailto:jaren.mcd@gmail.com" alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
+                    <a className="btn btn-primary" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
                   </div>
                   <Card.Link 
-                    href={`https://github.com/${social?.github || ``}`} 
-                    alt="Checkout my github profile" className="contact-icon-link">
+                    href={`https://github.com/${social?.github || ``}`}
+                      alt="Checkout my github profile" className="contact-icon-link"
+                    >
                     <span class="sr-only">Github</span>
                     <FaGithub className="contact-icon" title="github logo" />
                   </Card.Link>
-                  <Card.Link href={`https://www.linked.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile" className="contact-icon-link">
-                  <span className="sr-only">linkedin</span>
-                  <FaLinkedin className="contact-icon" title="linkedin logo" />
+                  <Card.Link href={`https://www.linked.com/in/${social?.linkedin || ``}`} 
+                    alt="Checkout my linkedin profile" 
+                    className="contact-icon-link"
+                  >
+                    <span className="sr-only">linkedin</span>
+                    <FaLinkedin className="contact-icon" title="linkedin logo" />
                   </Card.Link>
                 </Card.Body>
               </Card>
@@ -83,7 +87,7 @@ const Index = ({ data, location }) => {
         
       </section>
 
-      <Container className="mb-4 mb-sm-5" id="about">
+      <Container className="mb-4 mb-sm-5 pt-2 pt-md-4" id="about">
         <Row className="align-items-center">
           <Col xs={12} md={6}>
             <GatsbyImage className="about-img" image={profileimage} alt="me and my car" />
@@ -97,7 +101,7 @@ const Index = ({ data, location }) => {
         </Row>
       </Container>
 
-      <Container className="mb-4 mb-sm-5" id="work" fluid>
+      <Container className="mb-4 mb-sm-5 py-md-4" id="work" fluid>
         <div className="index-work-con mx-auto">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -144,7 +148,7 @@ const Index = ({ data, location }) => {
                   Have a new project in mind? Need help with an existing project? Looking for an experienced freelance web developer? No matter what point you are with your project, I'll be happy to help!
                 </Card.Text>
                 <div className="mb-3">
-                  <a className="btn btn-primary" href="mailto:jaren.mcd@gmail.com" alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
+                  <a className="btn btn-primary" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
                 </div>
                 <Card.Link 
                   href={`https://github.com/${social?.github || ``}`} 
@@ -176,6 +180,7 @@ export const pageQuery = graphql`
         social {
           github
           linkedin
+          email
         }
       }
     }
@@ -203,7 +208,7 @@ export const pageQuery = graphql`
           thumbimg {
             childImageSharp {
               gatsbyImageData (
-                width: 850
+                width: 865
                 placeholder: BLURRED
                 formats: [AUTO, WEBP]
               )

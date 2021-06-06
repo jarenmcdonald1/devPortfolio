@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { Row, Col } from 'react-bootstrap'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,8 @@ const Bio = () => {
           }
           social {
             github
+            email
+            linkedin
           }
         }
       }
@@ -44,15 +47,34 @@ const Bio = () => {
 
   return (
     <Row className="bio justify-content-center">
-    <Col xs={12} className="bio-col d-flex align-items-center justify-content-center">
+    <Col xs={12} className="bio-col d-sm-flex align-items-center justify-content-center">
       <GatsbyImage className="rounded-circle bio-img mr-2" image={image} alt={'me and my car'} />
+      <div>
       {author?.name && (
         <p className="mb-0">
-          Written by <strong>{author.name}</strong> {author?.summary || null} <a href={`https://github.com/${social?.github || ``}`}> You should follow me on Github!
+          Created by <strong>{author.name}</strong> {author?.summary || null} <a href={`https://github.com/${social?.email || ``}`}> Say hi, send me an email!
           </a>
         </p>
       )}
-      </Col>
+      <p className="pt-2">
+        <a 
+          className="icon mr-3" 
+          href={`https://github.com/${social?.github || ``}`} 
+          alt="Checkout my github profile"
+        >
+          <span class="sr-only">Github</span>
+          <FaGithub className="contact-icon text-dark" title="github logo" />
+        </a>
+        <a 
+          className="icon" 
+          href={`https://www.linked.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile"
+        >
+          <span className="sr-only">linkedin</span>
+          <FaLinkedin className="contact-icon text-dark" title="linkedin logo" />
+        </a>
+      </p>
+      </div>
+    </Col>
     </Row>
   )
 }

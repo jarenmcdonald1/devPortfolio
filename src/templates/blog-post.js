@@ -22,11 +22,11 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
 
-      <section className="post-banner-con">
+      <section className="post-banner-con overflow-hidden">
         <div className="post-banner-text-con px-2 py-2 d-flex align-items-center justify-content-center">
           <h1 className="banner-title text-center text-white font-weight-bold">{post.frontmatter.title}</h1>
         </div>
-        <div className="post-banner-img-con">
+        <div className="post-banner-img-con overflow-hidden">
           <GatsbyImage className="post-banner-img" image={bannerimage} alt={post.frontmatter.title} />
         </div>
       </section>
@@ -40,7 +40,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <h2 itemProp="headline">{post.frontmatter.title}</h2>
         </header>
 
-        <section className="row project-details">
+        <section className="row project-details pt-3 mb-3 border-bottom">
         <Col xs={12} sm={6}>
             <p>Client: {post.frontmatter.client}</p>
           </Col>
@@ -73,14 +73,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev" className="btn btn-outline-dark rounded-pill">
+              <Link to={previous.fields.slug} rel="prev" className="project-post-btn btn btn-outline-primary rounded-pill">
               <FaAngleLeft className="mb-1 mr-1" title="arrow left icon" /> {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li className="text-right">
             {next && (
-              <Link to={next.fields.slug} rel="next" className="text-right btn btn-outline-dark rounded-pill">
+              <Link to={next.fields.slug} rel="next" className="project-post-btn text-right btn btn-outline-primary rounded-pill">
                 {next.frontmatter.title} <FaAngleRight className="mb-1 ml-1" title="arrow right icon" />
               </Link>
             )}
