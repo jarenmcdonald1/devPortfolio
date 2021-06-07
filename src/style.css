@@ -1,5 +1,33 @@
 
+:root {
+    --color-main-300: hsl(93, 26%, 60%);
+    --color-main-500: hsl(93, 45%, 36%);
+    --color-main-700: hsl(93, 55%, 17%);
+}
 
+a {
+    color: var(--color-main-700);
+}
+a:hover, a:active, a:focus {
+    color: var(--color-main-500);
+}
+
+.btn-primary {
+    background-color: var(--color-main-500);
+    border-color: var(--color-main-500);
+}
+.btn-primary:hover {
+    background-color: var(--color-main-700);
+    border-color: var(--color-main-700);
+}
+.btn-outline-primary {
+    color: var(--color-main-500);
+    border-color: var(--color-main-500);
+}
+.btn-outline-primary:hover {
+    background-color: var(--color-main-700);
+    border-color: var(--color-main-700);
+}
 
 .bio-img {
     min-width: 100px !important;
@@ -45,7 +73,7 @@
     text-decoration: none;
 }
 .work-project-main:hover .work-project-con {
-    background-color: hsla(211, 100%, 50%, 0.5);
+    background-color: hsla(93, 45%, 36%, 0.65);
 }
 
 .work-project-con, .work-img {
@@ -63,7 +91,7 @@
 .work-project-con {
     z-index: 51;
 
-    background-color: hsla(211, 100%, 50%, 0.3);
+    background-color: hsla(93, 45%, 36%, 0.25);
     height: 100%;
     transition: all 0.14s ease-in-out;
 }
@@ -87,7 +115,9 @@
     text-shadow: #222 1px 1px 5px;
 }
 
-
+.icon {
+    color: #222;
+}
 .contact-icon {
     height: 40px;
     width: auto;
@@ -101,11 +131,11 @@
 @media only screen and (min-width: 576px) {
 
     .work-project-con {
-        background-color: hsla(211, 100%, 50%, 0.1);
+        background-color: hsla(93, 45%, 36%, 0.1);
     }
 
     .work-project-main:hover .work-project-con {
-        background-color: hsla(211, 100%, 50%, 0.6);
+        background-color: hsla(93, 45%, 36%, 0.6);
     }
 
     .index-work-con {

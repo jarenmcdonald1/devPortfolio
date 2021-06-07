@@ -63,14 +63,14 @@ const Bio = () => {
           alt="Checkout my github profile"
         >
           <span class="sr-only">Github</span>
-          <FaGithub className="contact-icon text-dark" title="github logo" />
+          <FaGithub className="contact-icon" title="github logo" />
         </a>
         <a 
           className="icon" 
           href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile"
         >
           <span className="sr-only">linkedin</span>
-          <FaLinkedin className="contact-icon text-dark" title="linkedin logo" />
+          <FaLinkedin className="contact-icon" title="linkedin logo" />
         </a>
       </p>
       </div>
