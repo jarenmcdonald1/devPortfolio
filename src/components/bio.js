@@ -67,7 +67,7 @@ const Bio = () => {
         </a>
         <a 
           className="icon" 
-          href={`https://www.linked.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile"
+          href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile"
         >
           <span className="sr-only">linkedin</span>
           <FaLinkedin className="contact-icon text-dark" title="linkedin logo" />

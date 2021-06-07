@@ -63,7 +63,7 @@ const Index = ({ data, location }) => {
                     <span class="sr-only">Github</span>
                     <FaGithub className="contact-icon" title="github logo" />
                   </Card.Link>
-                  <Card.Link href={`https://www.linked.com/in/${social?.linkedin || ``}`} 
+                  <Card.Link href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} 
                     alt="Checkout my linkedin profile" 
                     className="contact-icon-link"
                   >
@@ -156,7 +156,7 @@ const Index = ({ data, location }) => {
                   <span class="sr-only">Github</span>
                   <FaGithub className="contact-icon" title="github logo" />
                 </Card.Link>
-                <Card.Link href={`https://www.linked.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile" className="contact-icon-link">
+                <Card.Link href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} alt="Checkout my linkedin profile" className="contact-icon-link">
                 <span className="sr-only">linkedin</span>
                 <FaLinkedin className="contact-icon" title="linkedin logo" />
                 </Card.Link>
