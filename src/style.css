@@ -3,6 +3,12 @@
     --color-main-300: hsl(93, 26%, 60%);
     --color-main-500: hsl(93, 45%, 36%);
     --color-main-700: hsl(93, 55%, 17%);
+
+    --color-gray-100: #eee;
+    --color-gray-200: #bbb;
+    --color-gray-500: #777;
+    --color-gray-700: #444;
+    --color-gray-900: #222222;
 }
 
 a {
@@ -40,19 +46,37 @@ a:hover, a:active, a:focus {
 .logo-text {
     font-size: 1.5em;
     font-weight: 900;
+    color: var(--color-gray-100) !important;
 }
 
 .transition {
     transition: all 0.14s ease-in-out;
 }
 
+.header-nav-links:hover, .header-nav-links:focus {
+    color: white !important;
+}
+.header-nav-links {
+    padding: 1rem 1rem !important;
+    color: var(--color-gray-200) !important;
+    text-align: right;
+    font-size: 1.25em;
+    text-transform: capitalize;
+
+    border-bottom: var(--color-gray-500) 1px solid;
+
+    transition: all 0.14s ease-in-out;
+}
+.header-nav-links:last-child {
+    border-bottom: none;
+}
 
 .footer-main {
-    background-color: #222222;
+    background-color: var(--color-gray-900);
 }
 
 .footer-nav-con .nav-link {
-    color: lightgray;
+    color: var(--color-gray-200);
     font-size: 1.125em;
 }
 .footer-nav-con .nav-link:hover {
@@ -87,11 +111,12 @@ a:hover, a:active, a:focus {
     min-height: 100%;
     height: auto;
     object-fit: cover;
+    filter: blur(1px);
 }
 .work-project-con {
     z-index: 51;
 
-    background-color: hsla(93, 45%, 36%, 0.25);
+    background-color: hsla(93, 45%, 36%, 0.35);
     height: 100%;
     transition: all 0.14s ease-in-out;
 }
@@ -112,11 +137,11 @@ a:hover, a:active, a:focus {
 .project-sample h5,
 .project-sample h6,
 .project-sample p {
-    text-shadow: #222 1px 1px 5px;
+    text-shadow: var(--color-gray-900) 1px 1px 5px;
 }
 
 .icon {
-    color: #222;
+    color: var(--color-gray-900);
 }
 .contact-icon {
     height: 40px;
@@ -124,14 +149,18 @@ a:hover, a:active, a:focus {
     color: inherit;
 }
 .contact-icon-link {
-    color: #222222;
+    color: var(--color-gray-900);
     transition: all 0.14s ease-in-out;
 }
 
 @media only screen and (min-width: 576px) {
 
     .work-project-con {
-        background-color: hsla(93, 45%, 36%, 0.1);
+        background-color: hsla(93, 45%, 36%, 0.2);
+    }
+
+    .work-img {
+        filter: blur(0);
     }
 
     .work-project-main:hover .work-project-con {
@@ -172,9 +201,22 @@ a:hover, a:active, a:focus {
         max-width: 1200px;
     }
 
+    .work-project-main:hover .work-img {
+        filter: blur(2px);
+    }
+
+    .work-project-main:hover .work-project-con, .work-project-main:focus .work-project-con {
+        background-color: hsla(93, 45%, 36%, 0.45);
+    }
+    .work-project-main .work-project-con {
+        background-color: hsla(93, 45%, 36%, 0.1);
+    }
+
     .work-project-main {
         grid-column-end: span 2;
         grid-row-end: span 1;
+
+        overflow: hidden;
     }
     .work-project-main:nth-child(10n+3) {
         grid-row-end: span 2;
@@ -199,6 +241,23 @@ a:hover, a:active, a:focus {
 
 
 @media only screen and (min-width: 992px) {
+    .header-nav-links {
+        padding: 0.25rem 0.125rem !important;
+        margin-right: 1rem;
+        font-size: 1em;
+        text-transform: capitalize;
+    
+        border-bottom: transparent 1px solid;
+    }
+    .header-nav-links:last-child {
+        margin-right: 0;
+        border-bottom: transparent 1px solid;
+    }
+    .header-nav-links:hover, .header-nav-links:focus {
+        border-bottom: var(--color-main-500) 1px solid;
+        color: white !important;
+    }
+
     .project-sample .sample-title {
         font-size: 4.25em;
     }
@@ -272,7 +331,7 @@ a:hover, a:active, a:focus {
 
 .banner-title {
     font-size: 3.5em;
-    text-shadow: #222 1px 1px 6px;
+    text-shadow: var(--color-gray-900) 1px 1px 6px;
     line-height: 1;
 }
 

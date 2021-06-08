@@ -43,17 +43,17 @@ const Index = ({ data, location }) => {
             <Col xs={12} md={4} className="mb-2">
               <Card className="w-100 shadow">
                 <Card.Body>
-                  <Card.Title className="text-center border-bottom border-success">Design <FaEdit className="mb-1 ml-2" /></Card.Title>
-                  <div className="d-flex justify-content-center flex-wrap">
-                    <Card.Text className="mr-2 mb-2">Adobe Acrobat</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Photoshop</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Illustrator</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe InDesign</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe XD</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Bridge</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Lightroom</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Sketch</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Affinity Designer</Card.Text>
+                  <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Design <FaEdit className="mb-1 ml-2 text-secondary" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap text-center">
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Acrobat</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Photoshop</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Illustrator</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe InDesign</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe XD</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Bridge</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Lightroom</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Sketch</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Affinity Designer</Card.Text>
                   </div>
                 </Card.Body>
               </Card>
@@ -61,25 +61,25 @@ const Index = ({ data, location }) => {
             <Col xs={12} md={4} className="mb-2">
               <Card className="w-100 shadow">
                 <Card.Body>
-                  <Card.Title className="text-center border-bottom border-success">Code <FaLaptopCode className="mb-1 ml-2" /></Card.Title>
-                  <div className="d-flex justify-content-center flex-wrap">
-                    <Card.Text className="mr-2 mb-2">Git</Card.Text>
-                    <Card.Text className="mr-2 mb-2">HTML5</Card.Text>
-                    <Card.Text className="mr-2 mb-2">CSS 3</Card.Text>
-                    <Card.Text className="mr-2 mb-2">SASS/SCSS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">PostCSS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">JavaScript ES6</Card.Text>
-                    <Card.Text className="mr-2 mb-2">GatsbyJS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">NuxtJS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">PHP</Card.Text>
-                    <Card.Text className="mr-2 mb-2">mySQL</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Drupal CMS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Wordpress CMS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Netlify CMS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Grunt/Gulp</Card.Text>
-                    <Card.Text className="mr-2 mb-2">NodeJS</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Bootstrap</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Tailwind CSS</Card.Text>
+                  <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Code <FaLaptopCode className="mb-1 ml-2 text-secondary" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap text-center">
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Git</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">HTML5</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS 3</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">SASS/SCSS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PostCSS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">JavaScript ES6</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">GatsbyJS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NuxtJS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Drupal CMS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Wordpress CMS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Netlify CMS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Grunt/Gulp</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NodeJS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Tailwind CSS</Card.Text>
                   </div>
                 </Card.Body>
               </Card>
@@ -87,13 +87,13 @@ const Index = ({ data, location }) => {
             <Col xs={12} md={4} className="mb-2">
               <Card className="w-100 shadow">
                 <Card.Body>
-                  <Card.Title className="text-center border-bottom border-success">Video  <FaPhotoVideo className="mb-1 ml-2" /></Card.Title>
-                  <div className="d-flex justify-content-center flex-wrap">
-                    <Card.Text className="mr-2 mb-2">Adobe After Effects</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Premier</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Final Cut Pro</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Motion</Card.Text>
-                    <Card.Text className="mr-2 mb-2">Adobe Media Encoder</Card.Text>
+                  <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Video  <FaPhotoVideo className="mb-1 ml-2 text-secondary" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap text-center">
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe After Effects</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Premier</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Final Cut Pro</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Motion</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Media Encoder</Card.Text>
                   </div>
                 </Card.Body>
               </Card>
@@ -167,17 +167,17 @@ const Index = ({ data, location }) => {
           <Col xs={12} md={4} className="mb-2">
             <Card className="w-100 shadow">
               <Card.Body>
-                <Card.Title className="text-center border-bottom border-success">Design <FaEdit className="mb-1 ml-2" /></Card.Title>
-                <div className="d-flex justify-content-center flex-wrap">
-                  <Card.Text className="mr-2 mb-2">Adobe Acrobat</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Photoshop</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Illustrator</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe InDesign</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe XD</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Bridge</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Lightroom</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Sketch</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Affinity Designer</Card.Text>
+                <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Design <FaEdit className="mb-1 ml-2 text-secondary" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap text-center">
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Acrobat</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Photoshop</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Illustrator</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe InDesign</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe XD</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Bridge</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Lightroom</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Sketch</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Affinity Designer</Card.Text>
                 </div>
               </Card.Body>
             </Card>
@@ -185,25 +185,25 @@ const Index = ({ data, location }) => {
           <Col xs={12} md={4} className="mb-2">
             <Card className="w-100 shadow">
               <Card.Body>
-                <Card.Title className="text-center border-bottom border-success">Code <FaLaptopCode className="mb-1 ml-2" /></Card.Title>
-                <div className="d-flex justify-content-center flex-wrap">
-                  <Card.Text className="mr-2 mb-2">Git</Card.Text>
-                  <Card.Text className="mr-2 mb-2">HTML5</Card.Text>
-                  <Card.Text className="mr-2 mb-2">CSS 3</Card.Text>
-                  <Card.Text className="mr-2 mb-2">SASS/SCSS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">PostCSS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">JavaScript ES6</Card.Text>
-                  <Card.Text className="mr-2 mb-2">GatsbyJS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">NuxtJS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">PHP</Card.Text>
-                  <Card.Text className="mr-2 mb-2">mySQL</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Drupal CMS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Wordpress CMS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Netlify CMS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Grunt/Gulp</Card.Text>
-                  <Card.Text className="mr-2 mb-2">NodeJS</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Bootstrap</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Tailwind CSS</Card.Text>
+                <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Code <FaLaptopCode className="mb-1 ml-2 text-secondary" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap text-center">
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Git</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">HTML5</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS 3</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">SASS/SCSS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PostCSS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">JavaScript ES6</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">GatsbyJS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NuxtJS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Drupal CMS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Wordpress CMS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Netlify CMS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Grunt/Gulp</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NodeJS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Tailwind CSS</Card.Text>
                 </div>
               </Card.Body>
             </Card>
@@ -211,13 +211,13 @@ const Index = ({ data, location }) => {
           <Col xs={12} md={4} className="mb-2">
             <Card className="w-100 shadow">
               <Card.Body>
-                <Card.Title className="text-center border-bottom border-success">Video  <FaPhotoVideo className="mb-1 ml-2" /></Card.Title>
-                <div className="d-flex justify-content-center flex-wrap">
-                  <Card.Text className="mr-2 mb-2">Adobe After Effects</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Premier</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Final Cut Pro</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Motion</Card.Text>
-                  <Card.Text className="mr-2 mb-2">Adobe Media Encoder</Card.Text>
+                <Card.Title className="text-center border-bottom border-success font-weight-bold text-dark pb-2">Video  <FaPhotoVideo className="mb-1 ml-2 text-secondary" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap text-center">
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe After Effects</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Premier</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Final Cut Pro</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Motion</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Adobe Media Encoder</Card.Text>
                 </div>
               </Card.Body>
             </Card>

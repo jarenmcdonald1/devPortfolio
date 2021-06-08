@@ -8,7 +8,7 @@ module.exports = {
     description: `My portfolio site showcasing what I've accomplished.`,
     siteUrl: `https://jaren.ca/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `jarenmcdonald`,
       github: `jarenmcdonald1`,
       linkedin: `jaren-mcdonald`,
       email: `jaren.mcd@gmail.com`,
@@ -121,7 +121,12 @@ module.exports = {
                     }
                     frontmatter {
                       title
-                      date
+                      date(formatString: "MMMM, YYYY")
+                      description
+                      subtitle
+                      client
+                      tags
+                      role
                     }
                   }
                 }
@@ -141,10 +146,10 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
         icon_options: {
           purpose: `maskable`,
         },
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
         <section className="row project-details pt-3 mb-3 border-bottom">
         <Col xs={12} sm={6}>
-            <h4 className="text-capitalize">Role: {post.frontmatter.role}</h4>
+            <h4 className="text-capitalize">Role: <span className="font-weight-normal">{post.frontmatter.role}</span></h4>
           </Col>
           <Col xs={12} sm={6} className="text-right">
             <p>Client: {post.frontmatter.client}</p>
@@ -57,7 +57,7 @@ const BlogPostTemplate = ({ data, location }) => {
 
         <hr />
 
-        <footer className="">
+        <footer className="mt-4">
           <Bio />
         </footer>
       </article>

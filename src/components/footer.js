@@ -24,8 +24,8 @@ const Footer = () => {
             </Nav.Item>
           </Nav>
         </Col>
-        <Col xs={12} className="text-center copyright-con py-1">
-          <p className="mb-0 text-white-50">&copy; {new Date().getFullYear()}, Built with <a href="https://www.gatsbyjs.com" alt="checkout Gatsbyjs" className="text-primary"> Gatsby</a></p>
+        <Col xs={12} className="text-center copyright-con pb-2 pb-sm-3">
+          <p className="mb-0 text-white-50 font-weight-light">&copy; {new Date().getFullYear()} Jaren McDonald,  Built with <a href="https://www.gatsbyjs.com" alt="checkout Gatsbyjs" className="text-success"> Gatsby</a></p>
         </Col>
       </Row>
     </footer>
