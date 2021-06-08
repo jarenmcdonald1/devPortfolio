@@ -5,6 +5,7 @@ date: 2017-11
 author: 'Jaren McDonald'
 client: 'Western University Housing and Ancillary Services'
 thumbimg: './lo-thumb.jpg'
+role: 'animator, designer'
 tags:
 - 2D Animation
 - Graphic Design

@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 import { Container, Row, Col, Card } from 'react-bootstrap'
-import { FaPaperPlane, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaPaperPlane, FaGithub, FaLinkedin, FaLaptopCode, FaEdit, FaPhotoVideo } from 'react-icons/fa';
 
 const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -33,15 +33,76 @@ const Index = ({ data, location }) => {
               <h4 className="display-4">Hello, I'm Jaren</h4>
               <h5>I'm a multi-talented front-end web developer that loves what I do!</h5>
               <p>Since beginning my journey nearly {careerduration} years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
-              <Link to="#contact" alt="send me an email" className="btn btn-primary btn-lg">Let's talk <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></Link>
+              <Link to="#contact" alt="send me an email" className="btn btn-success btn-lg">Let's talk <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></Link>
+            </Col>
+          </Row>
+        </Container>
+
+        <Container className="mb-4 mb-sm-5 pt-2 pt-md-4">
+          <Row className="about-skills">
+            <Col xs={12} md={4} className="mb-2">
+              <Card className="w-100 shadow">
+                <Card.Body>
+                  <Card.Title className="text-center border-bottom border-success">Design <FaEdit className="mb-1 ml-2" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap">
+                    <Card.Text className="mr-2 mb-2">Adobe Acrobat</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Photoshop</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Illustrator</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe InDesign</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe XD</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Bridge</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Lightroom</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Sketch</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Affinity Designer</Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={4} className="mb-2">
+              <Card className="w-100 shadow">
+                <Card.Body>
+                  <Card.Title className="text-center border-bottom border-success">Code <FaLaptopCode className="mb-1 ml-2" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap">
+                    <Card.Text className="mr-2 mb-2">Git</Card.Text>
+                    <Card.Text className="mr-2 mb-2">HTML5</Card.Text>
+                    <Card.Text className="mr-2 mb-2">CSS 3</Card.Text>
+                    <Card.Text className="mr-2 mb-2">SASS/SCSS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">PostCSS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">JavaScript ES6</Card.Text>
+                    <Card.Text className="mr-2 mb-2">GatsbyJS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">NuxtJS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">PHP</Card.Text>
+                    <Card.Text className="mr-2 mb-2">mySQL</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Drupal CMS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Wordpress CMS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Netlify CMS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Grunt/Gulp</Card.Text>
+                    <Card.Text className="mr-2 mb-2">NodeJS</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Bootstrap</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Tailwind CSS</Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col xs={12} md={4} className="mb-2">
+              <Card className="w-100 shadow">
+                <Card.Body>
+                  <Card.Title className="text-center border-bottom border-success">Video  <FaPhotoVideo className="mb-1 ml-2" /></Card.Title>
+                  <div className="d-flex justify-content-center flex-wrap">
+                    <Card.Text className="mr-2 mb-2">Adobe After Effects</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Premier</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Final Cut Pro</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Motion</Card.Text>
+                    <Card.Text className="mr-2 mb-2">Adobe Media Encoder</Card.Text>
+                  </div>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
         </Container>
 
         <p className="mb-4 mb-md-5 py-md-4">
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          No project posts found. Check back again later.
         </p>
 
         <Container className="mb-4" id="contact">
@@ -54,7 +115,7 @@ const Index = ({ data, location }) => {
                     Have a new project in mind? Need help with an existing project? Looking for an experienced freelance web developer? No matter what point you are with your project, I'll be happy to help!
                   </Card.Text>
                   <div className="mb-3">
-                    <a className="btn btn-primary" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
+                    <a className="btn btn-success" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
                   </div>
                   <Card.Link 
                     href={`https://github.com/${social?.github || ``}`}
@@ -96,7 +157,70 @@ const Index = ({ data, location }) => {
             <h4 className="display-4">Hello, I'm Jaren</h4>
             <h5>I'm a multi-talented front-end web developer that loves what I do!</h5>
             <p>Since beginning my journey nearly {careerduration} years ago, I've worked and collaborated with talented people to create unique and impactful marketing solutions. I'm always searching for interesting things to learn, build, and share. I have yet to find a challenge that is too big or small!</p>
-            <Link to="#contact" alt="send me an email" className="btn btn-primary btn-lg">Let's talk! <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></Link>
+            <Link to="#contact" alt="send me an email" className="btn btn-success btn-lg">Let's talk! <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></Link>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container className="mb-4 mb-sm-5 pt-2 pt-md-4">
+        <Row className="about-skills">
+          <Col xs={12} md={4} className="mb-2">
+            <Card className="w-100 shadow">
+              <Card.Body>
+                <Card.Title className="text-center border-bottom border-success">Design <FaEdit className="mb-1 ml-2" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap">
+                  <Card.Text className="mr-2 mb-2">Adobe Acrobat</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Photoshop</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Illustrator</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe InDesign</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe XD</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Bridge</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Lightroom</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Sketch</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Affinity Designer</Card.Text>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-2">
+            <Card className="w-100 shadow">
+              <Card.Body>
+                <Card.Title className="text-center border-bottom border-success">Code <FaLaptopCode className="mb-1 ml-2" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap">
+                  <Card.Text className="mr-2 mb-2">Git</Card.Text>
+                  <Card.Text className="mr-2 mb-2">HTML5</Card.Text>
+                  <Card.Text className="mr-2 mb-2">CSS 3</Card.Text>
+                  <Card.Text className="mr-2 mb-2">SASS/SCSS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">PostCSS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">JavaScript ES6</Card.Text>
+                  <Card.Text className="mr-2 mb-2">GatsbyJS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">NuxtJS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">PHP</Card.Text>
+                  <Card.Text className="mr-2 mb-2">mySQL</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Drupal CMS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Wordpress CMS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Netlify CMS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Grunt/Gulp</Card.Text>
+                  <Card.Text className="mr-2 mb-2">NodeJS</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Bootstrap</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Tailwind CSS</Card.Text>
+                </div>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={12} md={4} className="mb-2">
+            <Card className="w-100 shadow">
+              <Card.Body>
+                <Card.Title className="text-center border-bottom border-success">Video  <FaPhotoVideo className="mb-1 ml-2" /></Card.Title>
+                <div className="d-flex justify-content-center flex-wrap">
+                  <Card.Text className="mr-2 mb-2">Adobe After Effects</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Premier</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Final Cut Pro</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Motion</Card.Text>
+                  <Card.Text className="mr-2 mb-2">Adobe Media Encoder</Card.Text>
+                </div>
+              </Card.Body>
+            </Card>
           </Col>
         </Row>
       </Container>
@@ -116,6 +240,9 @@ const Index = ({ data, location }) => {
                     <Link to={post.fields.slug} alt={`click to read more about ${title}`}>
                       <h3 className="sample-title font-weight-bold mb-2">{title}</h3>
                     </Link>
+                    <Card.Text>
+                      
+                    </Card.Text>
                     <p
                       className="sample-desc font-weight-light"
                       dangerouslySetInnerHTML={{
@@ -124,7 +251,7 @@ const Index = ({ data, location }) => {
                       itemProp="description"
                     />
                     <div className="">
-                      <Link to={post.fields.slug} className="btn btn-primary" alt={`click to read more about ${title}`}>
+                      <Link to={post.fields.slug} className="btn btn-success" alt={`click to read more about ${title}`}>
                         Read more <span className="sr-only">about {title}</span>
                       </Link>
                     </div>
@@ -148,7 +275,7 @@ const Index = ({ data, location }) => {
                   Have a new project in mind? Need help with an existing project? Looking for an experienced freelance web developer? No matter what point you are with your project, I'll be happy to help!
                 </Card.Text>
                 <div className="mb-3">
-                  <a className="btn btn-primary" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
+                  <a className="btn btn-success" href={`mailto:${social.email}`} alt="click to send and email">Send me and email <FaPaperPlane title="paper plane icon" className="ml-1 mb-1" /></a>
                 </div>
                 <Card.Link 
                   href={`https://github.com/${social?.github || ``}`} 

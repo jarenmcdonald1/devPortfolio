@@ -5,6 +5,7 @@ date: 2016-09
 author: 'Jaren McDonald'
 client: 'Fanshawe College and the Team Canada 1972 Summit Series'
 thumbimg: './tc-thumb.jpg'
+role: 'front-end web developer'
 tags:
 - Web Development
 - Branding

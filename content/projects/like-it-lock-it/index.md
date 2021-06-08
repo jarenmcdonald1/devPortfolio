@@ -5,6 +5,7 @@ date: 2017-09
 author: 'Jaren McDonald'
 client: 'Western University Housing and Ancillary Services'
 thumbimg: './ll-thumb.jpg'
+role: 'project lead, designer'
 tags:
 - Graphic Design
 - Print Design

@@ -5,6 +5,7 @@ date: 2017-09
 author: 'Jaren McDonald'
 client: 'Fanshawe College and the London Economic Development Corporation'
 thumbimg: './tl-thumb.jpg'
+role: 'front-end web developer'
 tags:
 - Web Development
 - Marketing

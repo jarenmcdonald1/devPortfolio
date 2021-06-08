@@ -5,6 +5,7 @@ date: 2017-09
 author: 'Jaren McDonald'
 client: 'Fanshawe College'
 thumbimg: './jj-thumb.jpg'
+role: 'front-end web developer'
 tags:
 - Web Development
 - Branding

@@ -5,6 +5,7 @@ date: 2018-01
 author: 'Jaren McDonald'
 client: 'Fanshawe College and Lashbrook Marketing and Public Relations'
 thumbimg: './od-thumb.jpg'
+role: 'front-end web developer'
 tags:
 - Web Development
 - Marketing

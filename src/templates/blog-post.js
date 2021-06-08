@@ -42,10 +42,11 @@ const BlogPostTemplate = ({ data, location }) => {
 
         <section className="row project-details pt-3 mb-3 border-bottom">
         <Col xs={12} sm={6}>
-            <p>Client: {post.frontmatter.client}</p>
+            <h4 className="text-capitalize">Role: {post.frontmatter.role}</h4>
           </Col>
           <Col xs={12} sm={6} className="text-right">
-            {post.frontmatter.date}
+            <p>Client: {post.frontmatter.client}</p>
+            <p>Date: {post.frontmatter.date}</p>
           </Col>
         </section>
 
@@ -73,14 +74,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev" className="project-post-btn btn btn-outline-primary rounded-pill">
+              <Link to={previous.fields.slug} rel="prev" className="project-post-btn btn btn-outline-success rounded-pill">
               <FaAngleLeft className="mb-1 mr-1" title="arrow left icon" /> {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li className="text-right">
             {next && (
-              <Link to={next.fields.slug} rel="next" className="project-post-btn text-right btn btn-outline-primary rounded-pill">
+              <Link to={next.fields.slug} rel="next" className="project-post-btn text-right btn btn-outline-success rounded-pill">
                 {next.frontmatter.title} <FaAngleRight className="mb-1 ml-1" title="arrow right icon" />
               </Link>
             )}
@@ -115,6 +116,7 @@ export const pageQuery = graphql`
         subtitle
         client
         tags
+        role
         thumbimg {
           childImageSharp {
             gatsbyImageData (                
