@@ -232,6 +232,9 @@ a:hover, a:active, a:focus {
     .work-project-main:nth-child(10n+8) {
         grid-row-end: span 2;
     }
+    .work-project-main:nth-child(10n+11) {
+        grid-column-end: span 4;
+    }
 
     .project-sample .sample-title {
         font-size: 3.125em;
@@ -275,7 +278,7 @@ a:hover, a:active, a:focus {
         grid-row-end: span 2;
     }
 
-    .work-project-main:nth-child(10n+1) {
+    .work-project-main:nth-child(11n+1) {
         grid-row-end: span 1;
         grid-column-end: span 3;
     }
@@ -313,7 +316,11 @@ a:hover, a:active, a:focus {
     }
     .work-project-main:nth-child(10n+10) {
         grid-row-end: span 1;
-        grid-column-end: span 4;
+        grid-column-end: span 2;
+    }
+    .work-project-main:nth-child(10n+11) {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
     }
 
     .project-sample .sample-title {
