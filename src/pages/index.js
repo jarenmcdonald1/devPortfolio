@@ -65,20 +65,22 @@ const Index = ({ data, location }) => {
                   <div className="d-flex justify-content-center flex-wrap text-center">
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Git</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">HTML5</Card.Text>
-                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS 3</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS3</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">SASS/SCSS</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PostCSS</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">JavaScript ES6</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">GatsbyJS</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NuxtJS</Card.Text>
-                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
-                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Drupal CMS</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Wordpress CMS</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Netlify CMS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">VueJS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">ReactJS</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Grunt/Gulp</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NodeJS</Card.Text>
-                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap</Card.Text>
+                    <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap 4 & 5</Card.Text>
                     <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Tailwind CSS</Card.Text>
                   </div>
                 </Card.Body>
@@ -189,20 +191,22 @@ const Index = ({ data, location }) => {
                 <div className="d-flex justify-content-center flex-wrap text-center">
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Git</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">HTML5</Card.Text>
-                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS 3</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">CSS3</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">SASS/SCSS</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PostCSS</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">JavaScript ES6</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">GatsbyJS</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NuxtJS</Card.Text>
-                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
-                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Drupal CMS</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Wordpress CMS</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Netlify CMS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">VueJS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">ReactJS</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">PHP</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">mySQL</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Grunt/Gulp</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">NodeJS</Card.Text>
-                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap</Card.Text>
+                  <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Bootstrap 4 & 5</Card.Text>
                   <Card.Text className="mr-2 mr-md-3 mr-lg-4 mb-lg-3 mb-2">Tailwind CSS</Card.Text>
                 </div>
               </Card.Body>
