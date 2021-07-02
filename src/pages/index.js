@@ -24,7 +24,7 @@ const Index = ({ data, location }) => {
         
         </section>
 
-        <Container className="mb-4 mb-sm-5 pt-2 pt-md-4" id="about">
+        <Container className="mb-4 mb-sm-5 pt-3 pt-md-4 pt-lg-5" id="about">
           <Row className="align-items-center">
             <Col xs={12} md={6}>
               <GatsbyImage className="about-img" image={profileimage} alt="me and my car" />
@@ -150,7 +150,7 @@ const Index = ({ data, location }) => {
         
       </section>
 
-      <Container className="mb-4 mb-sm-5 pt-2 pt-md-4" id="about">
+      <Container className="mb-4 mb-sm-5 pt-3 pt-md-4 pt-lg-5" id="about">
         <Row className="align-items-center">
           <Col xs={12} md={6}>
             <GatsbyImage className="about-img" image={profileimage} alt="me and my car" />
