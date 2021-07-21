@@ -1,5 +1,5 @@
 ---
-title: ' GatsbyJS Portfolio Website'
+title: 'GatsbyJS Portfolio Website'
 subtitle: 'Showcasing my lastest and greatest projects with GatsbyJS and React!'
 date: 2020-07
 author: 'Jaren McDonald'
