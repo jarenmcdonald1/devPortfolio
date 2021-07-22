@@ -1,10 +1,10 @@
 ---
 title: 'ReactJS Quiz App'
 subtitle: 'A simple quiz using React, Rest API, and Global Styles.'
-date: 2021-07
+date: 2021-06
 author: 'Jaren McDonald'
 client: 'Personal Project'
-thumbimg: './pexels-michael-burrows.jpg'
+thumbimg: './pew-nguyen.jpg'
 role: 'front-end web developer'
 tags: ["ReactJS", "Netlify Hosting", "TypeScript"]
 ---

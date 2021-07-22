@@ -169,22 +169,15 @@ a:hover, a:active, a:focus {
 
     .index-work-con {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-    }
-
-    .work-project-main {
-        grid-column-end: span 1;
-        grid-row-end: span 1;
-    }
-    .work-project-main:nth-child(5n+1) {
-        grid-column-end: span 2;
-    }
-    .work-project-main:nth-child(6n+3) {
-        grid-row-end: span 1;
     }
 
     .project-sample .sample-title {
         font-size: 2.65em;
+    }
+
+    .work-project-main {
+        grid-row-end: span 1;
+        grid-column-end: span 1;
     }
 
 }
@@ -198,7 +191,20 @@ a:hover, a:active, a:focus {
 
     .index-work-con {
         grid-template-columns: repeat(4, 1fr);
-        max-width: 1200px;
+    }
+
+    .work-project-main {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
+    }
+
+    .work-project-main:nth-child(4n+1) {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+    }
+    .work-project-main:last-child {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
     }
 
     .work-project-main:hover .work-img {
@@ -210,30 +216,6 @@ a:hover, a:active, a:focus {
     }
     .work-project-main .work-project-con {
         background-color: hsla(93, 45%, 36%, 0.1);
-    }
-
-    .work-project-main {
-        grid-column-end: span 2;
-        grid-row-end: span 1;
-
-        overflow: hidden;
-    }
-    .work-project-main:nth-child(10n+3) {
-        grid-row-end: span 2;
-        grid-column-end: span 3;
-    }
-    .work-project-main:nth-child(10n+4) {
-        grid-row-end: span 2;
-        grid-column-end: span 1;
-    }
-    .work-project-main:nth-child(10n+6) {
-        grid-row-end: span 2;
-    }
-    .work-project-main:nth-child(10n+8) {
-        grid-row-end: span 2;
-    }
-    .work-project-main:nth-child(10n+11) {
-        grid-column-end: span 4;
     }
 
     .project-sample .sample-title {
@@ -264,67 +246,56 @@ a:hover, a:active, a:focus {
     .project-sample .sample-title {
         font-size: 4.25em;
     }
+
+    .work-project-main {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
+    }
+    .work-project-main:nth-child(4n+1) {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
+    }
+    .work-project-main:nth-child(6n+1) {
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+    }
+    .work-project-main:last-child {
+        grid-row-end: span 1;
+        grid-column-end: span 2;
+    }
 }
 
 
 @media only screen and (min-width: 1200px) {
 
+    .project-sample .sample-title {
+        font-size: 4em;
+    }
+
     .index-work-con {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .work-project-main {
-        grid-column-end: span 2;
-        grid-row-end: span 2;
+        grid-row-end: span 1;
+        grid-column-end: span 1;
     }
 
-    .work-project-main:nth-child(11n+1) {
+    .work-project-main:nth-child(4n+1) {
         grid-row-end: span 1;
-        grid-column-end: span 3;
+        grid-column-end: span 1;
     }
-    .work-project-main:nth-child(10n+2) {
+    .work-project-main:nth-child(6n+1) {
         grid-row-end: span 1;
-        grid-column-end: span 3;
+        grid-column-end: span 1;
     }
-    .work-project-main:nth-child(10n+3) {
-        grid-row-end: span 1;
-        grid-column-end: span 4;
-    }
-    .work-project-main:nth-child(10n+4) {
-        grid-row-end: span 3;
-        grid-column-end: span 2;
-    }
-    .work-project-main:nth-child(10n+5) {
-        grid-column-end: span 2;
-        grid-row-end: span 2;
-    }
-    .work-project-main:nth-child(10n+6) {
-        grid-column-end: span 2;
-        grid-row-end: span 2;
-    }
-    .work-project-main:nth-child(10n+7) {
-        grid-row-end: span 3;
-        grid-column-end: span 2;
-    }
-    .work-project-main:nth-child(10n+8) {
+    .work-project-main:nth-child(9n+1) {
         grid-row-end: span 2;
         grid-column-end: span 2;
     }
-    .work-project-main:nth-child(10n+9) {
-        grid-row-end: span 2;
-        grid-column-end: span 2;
-    }
-    .work-project-main:nth-child(10n+10) {
+    .work-project-main:last-child {
         grid-row-end: span 1;
-        grid-column-end: span 2;
-    }
-    .work-project-main:nth-child(10n+11) {
-        grid-row-end: span 1;
-        grid-column-end: span 2;
-    }
-
-    .project-sample .sample-title {
-        font-size: 4em;
+        grid-column-end: span 1;
     }
 }
 
