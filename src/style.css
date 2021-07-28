@@ -222,6 +222,10 @@ a:hover, a:active, a:focus {
         font-size: 3.125em;
         line-height: 1;
     }
+
+    .work-img {
+        height: 350px;
+    }
 }
 
 

@@ -339,7 +339,7 @@ export const pageQuery = graphql`
           thumbimg {
             childImageSharp {
               gatsbyImageData (
-                width: 865
+                width: 1200
                 placeholder: BLURRED
                 formats: [AUTO, WEBP]
               )
